@@ -43,3 +43,14 @@ height: 50px;
     position: absolute;
     margin: 0 auto;
 }
+.fondo_dado{
+  background: url(/img/img_dados2.JPG);
+    
+}
+
+
+li{
+    list-style: none ;
+    font-size: 25px;
+   
+}
