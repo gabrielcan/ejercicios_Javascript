@@ -4,8 +4,8 @@
 var cantDados;
 // cantDados=parseInt(cantDados);
 
-function dado(cantDados) {
-var cont=0
+function dado() {
+    cantDados=2
 
 var node1 = document.createElement("li");      
 var node2 = document.createElement("li");              // Create a <li> node
@@ -30,6 +30,7 @@ for(var index = 0; index < cantDados; index++) {
                 textnode1=document.createTextNode(index2+1);  
                 node1.appendChild(textnode1);  
                 document.getElementById("myList1").appendChild(node1)
+
                 textnode2=document.createTextNode(index3+1);  
                 node2.appendChild(textnode2);  
                 document.getElementById("myList2").appendChild(node2)
@@ -38,9 +39,10 @@ for(var index = 0; index < cantDados; index++) {
 }
 
 }
+document.getElementById('dados').style.display='none'; //ocultar botom
 }
 
-dado(2);
+// dado(2);
 
 
 function redireccion() {

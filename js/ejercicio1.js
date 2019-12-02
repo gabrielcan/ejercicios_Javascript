@@ -1,12 +1,16 @@
 // ejercici1
 
-var alt=document.getElementById('altura').value;
-var peso=document.getElementById('peso').value;
-var edad=document.getElementById('edad').value;
 
-function calcPeso(alt,peso,edad) {
+
+function calcPeso() {
+    
+    var alt=document.getElementById('altura').value;
+    var peso=document.getElementById('peso').value;
+    var edad=document.getElementById('edad').value;
+
+    if(control(alt)==true&&control(peso)==true&&control(edad)==true){
+
 var indice=peso/alt;
-//  console.log(indice)
 
 if (edad>=45 && indice<22) {
     
@@ -21,14 +25,24 @@ else {
     alert("Medio");
 
 }
-
+} else{
+    alert('Deben completarse todos los campos con valores');
+}
 
 }  // fin de la funcion
 
 
+function control(variable){
 
+    if(variable==0|| variable==""){
+        return false;
+    }
 
-// ejercicio 3
+    else 
+    {
+        return true;
+    }
+}
 
 
 function menu() {

@@ -11,26 +11,26 @@
 </head>
 <body>
 
-    <div class="cont__img">
+    <div class="cont__img ">
 
-    <a href="index.html"><img src="/img/img_logo.JPG" alt="" class="img__logo"></a>
+<a href='/index.html' class="regresar fixed-top "><h1>REGRESAR AL MENU PRINCIPAL</h1></a>
     </div>
     
  <div class="container d-flex justify-content-center menu__cont_2 flex-column">
             <div class="form-group">
               <label for="altura" class="label__input">Ingrese Altura</label>
-              <input type="number" class="form-control input__num" id="altura" placeholder="Ingrese altura">
+              <input type="number" class="form-control input__num" id="altura" placeholder="Ingrese altura" required>
             </div>
             <div class="form-group">
                 <label for="peso" class="label__input">Ingrese Peso</label>
-                <input type="number" class="form-control input__num" id="peso" placeholder="Ingrese Peso">
+                <input type="number" class="form-control input__num" id="peso" placeholder="Ingrese Peso" required>
               </div>
               <div class="form-group">
                 <label for="edad" class="label__input">Ingrese Edad</label>
-                <input type="number" class="form-control input__num" id="edad" placeholder="Ingrese Edad">
+                <input type="number" class="form-control input__num" id="edad" placeholder="Ingrese Edad" required>
               </div>
             
-            <button type="submit" class="btn btn-primary ejer__btn" onclick="calcPeso(alt,peso,edad)">Calcular</button>
+            <button type="submit" class="btn btn-primary ejer__btn" onclick="calcPeso()">Calcular</button>
  </div>
     
 
